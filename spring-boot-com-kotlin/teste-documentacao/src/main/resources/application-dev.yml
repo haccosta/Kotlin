@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driveClassName: commysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/forum
+    username: root
+    password: root
+
+  jpa:
+    defer-datasource-initialization: false
+    database-plataform: org.hibernate.dialect.H2Dialect
+
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  h2:
+    console:
+      enable: true
+
+jwt:
+  secret: secreto
